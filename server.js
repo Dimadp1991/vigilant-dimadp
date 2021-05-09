@@ -12,6 +12,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 router.get("/", (req, res) => res.sendFile(path.resolve("./index.html")));
+router.get("/home", (req, res) => res.sendFile(path.resolve("./home.html")));
 
 
 module.exports = router;
